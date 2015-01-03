@@ -32,7 +32,7 @@ files = [
   {file: "#{fixture_path}/file.csv"},
   {file: "#{fixture_path}/file2.csv"}
 ]
-SSV.load(file: 'path/to/file.csv').return
+SSV.load(files).return
 ```
 
 Return a symbol separated file
