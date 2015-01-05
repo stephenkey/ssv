@@ -7,7 +7,7 @@ describe SSV do
       {file: "#{fixture_path}/basic.csv", col_sep: ',', headers: 'last_name,first_name,city,color,date'},
       {file: "#{fixture_path}/basic.txt", col_sep: '$', headers: 'last_name,first_name,middle_init,city,date,color'}
     ]
-    output = SSV.load(files).return('last_name')
+    output = SSV.read(files).return('last_name')
     
     it 'load files' do
       expect(output).to_not be_empty
@@ -24,7 +24,7 @@ describe SSV do
       {file: "#{fixture_path}/basic.csv", col_sep: ',', headers: 'last_name,first_name,city,color,date'},
       {file: "#{fixture_path}/basic.txt", col_sep: '$', headers: 'last_name,first_name,middle_init,city,date,color'}
     ]
-    output = SSV.load(files).asc('last_name').return('last_name')
+    output = SSV.read(files).asc('last_name').return('last_name')
 
     it 'returns last_name in ascending order' do
       expect(output).to eq(["Bruen", "Cummerata", "Kirlin", "Kirlin", "Kirlin", "Nolan", "Parker", "Wilkinson"])

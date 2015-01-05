@@ -1,4 +1,4 @@
-# Ssv
+# SSV
 
 SSV is a Ruby Gem to import and sort symbol delimited files.
 
@@ -26,7 +26,7 @@ Return a single CSV
 SSV.load(file: 'path/to/file.csv').return
 ```
 
-Return a multiple CSV's
+Return multiple CSV's
 ```ruby
 files = [
   {file: "#{fixture_path}/file.csv"},
