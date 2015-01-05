@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = SSV::VERSION
   spec.authors       = ["Stephen Key"]
   spec.email         = ["stephenkey123@gmail.com"]
-  spec.summary       = %q{SSV is a Ruby Gem to import and sort symbol delimited files.}
-  spec.description   = %q{SSV is a Ruby Gem to import and sort symbol delimited files.}
-  spec.homepage      = ""
+  spec.summary       = %q{SSV is a ruby CSV wrapper for reading and sorting symbol separated files.}
+  spec.description   = %q{SSV is a ruby CSV wrapper for reading and sorting symbol separated files.}
+  spec.homepage      = "https://github.com/stephenkey/ssv"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
